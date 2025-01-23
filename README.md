@@ -81,8 +81,8 @@ Using the transform_udf.py script:
 
 Looker is used to visualize ingested customer data. Example visualizations include:
 
-•	Active vs. inactive customers.
+•	Customer demographics: Age distribution and Active vs. inactive customers.
 	
-•	Loyalty points distribution.
+•	Finacial insights: Loyalty points vs account  balance and Total account balance vs loyalty status.
 
 ![Train_Ticket_Booking_Data_Visulaization_Using_Looker.png](https://github.com/Kaushik-Puttaswamy/Train-Ticket-Booking-Customer-Data-Ingestion-via-Pub-Sub-Stream-Dataflow-and-BigQuery-with-Looker/blob/main/GCP_Console_Train_Ticket_Booking_Data_Ingestion_Screenshot/Train_Ticket_Booking_Data_Visulaization_Using_Looker.png)
