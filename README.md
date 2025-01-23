@@ -65,3 +65,5 @@ CREATE TABLE `train_ticket_dwh.train_ticket_stream_tb` (
 );
 
 ```
+
+![Bigquery_Table_Details.png](https://github.com/Kaushik-Puttaswamy/Train-Ticket-Booking-Customer-Data-Ingestion-via-Pub-Sub-Stream-Dataflow-and-BigQuery-with-Looker/blob/main/GCP_Console_Train_Ticket_Booking_Data_Ingestion_Screenshot/Bigquery_Table_Details.png)
