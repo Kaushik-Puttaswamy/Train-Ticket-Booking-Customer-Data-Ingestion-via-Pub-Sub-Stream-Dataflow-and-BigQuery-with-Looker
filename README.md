@@ -4,6 +4,19 @@
 
 This project demonstrates a train ticket booking customer data ingestion pipeline using Google Cloud Platform (GCP) services. Mock customer data is published to a Pub/Sub topic, processed through Dataflow, stored in BigQuery, and visualized using Looker.
 
+## Folder Structure
+Project/
+├── GCP_Console_Train_Ticket_Booking_Data_Ingestion_Screenshot/
+│   ├── Bigquery_Table_Details.png
+│   ├── Dataflow_Graph_View.png
+│   ├── Ingested_Customer_Data_Preview_in_Bigquery.png
+│   ├── Pubsub_Topic.png
+│   └── Train_Ticket_Booking_Data_Visulaization_Using_Looker.png
+├── Project Architecture.png
+├── bigquery_create_table.sql
+├── train_ticket_booking_customer_mock_data_to_pubsub.py
+└── transform_udf.py
+
 ## Architecture
 ![Project Architecture.png](https://github.com/Kaushik-Puttaswamy/Train-Ticket-Booking-Customer-Data-Ingestion-via-Pub-Sub-Stream-Dataflow-and-BigQuery-with-Looker/blob/main/Project%20Architecture.png)
 
@@ -86,3 +99,31 @@ Looker is used to visualize ingested customer data. Example visualizations inclu
 •	Finacial insights: Loyalty points vs account  balance and Total account balance vs loyalty status.
 
 ![Train_Ticket_Booking_Data_Visulaization_Using_Looker.png](https://github.com/Kaushik-Puttaswamy/Train-Ticket-Booking-Customer-Data-Ingestion-via-Pub-Sub-Stream-Dataflow-and-BigQuery-with-Looker/blob/main/GCP_Console_Train_Ticket_Booking_Data_Ingestion_Screenshot/Train_Ticket_Booking_Data_Visulaization_Using_Looker.png)
+
+## Ingested Data Preview
+
+A preview of the ingested data in BigQuery:
+
+![Ingested_Customer_Data_Preview_in_Bigquery.png](https://github.com/Kaushik-Puttaswamy/Train-Ticket-Booking-Customer-Data-Ingestion-via-Pub-Sub-Stream-Dataflow-and-BigQuery-with-Looker/blob/main/GCP_Console_Train_Ticket_Booking_Data_Ingestion_Screenshot/Ingested_Customer_Data_Preview_in_Bigquery.png)
+
+## Key Python Scripts
+
+### 1. Mock Data Generator
+
+train_ticket_booking_customer_mock_data_to_pubsub.py
+	
+ •	Generates mock data: Random names, email, loyalty points, etc.
+	
+ •	Publishes to the Pub/Sub topic.
+
+### 2. Transformation Logic
+
+transform_udf.py
+	
+ •	Validates data (e.g., formats dates, defaults missing fields).
+	
+ •	Enriches data with calculated fields like loyalty_status and account_age_days.
+
+## Conclusion
+
+This project demonstrates an end-to-end data ingestion pipeline leveraging GCP services. From data generation to visualization, it highlights real-time data handling and analytics capabilities.
