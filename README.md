@@ -5,16 +5,27 @@
 This project demonstrates a train ticket booking customer data ingestion pipeline using Google Cloud Platform (GCP) services. Mock customer data is published to a Pub/Sub topic, processed through Dataflow, stored in BigQuery, and visualized using Looker.
 
 ## Folder Structure
+
 Project/
+
 ├── GCP_Console_Train_Ticket_Booking_Data_Ingestion_Screenshot/
+
 │   ├── Bigquery_Table_Details.png
+
 │   ├── Dataflow_Graph_View.png
+
 │   ├── Ingested_Customer_Data_Preview_in_Bigquery.png
+
 │   ├── Pubsub_Topic.png
+
 │   └── Train_Ticket_Booking_Data_Visulaization_Using_Looker.png
+
 ├── Project Architecture.png
+
 ├── bigquery_create_table.sql
+
 ├── train_ticket_booking_customer_mock_data_to_pubsub.py
+
 └── transform_udf.py
 
 ## Architecture
