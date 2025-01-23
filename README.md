@@ -37,9 +37,9 @@ The script train_ticket_booking_customer_mock_data_to_pubsub.py:
 
 The dataflow pipeline:
 
-	•	Transforms the data using the transform_udf.py script.
+•	Transforms the data using the transform_udf.py script.
  
-	•	Writes the transformed data into BigQuery.
+•	Writes the transformed data into BigQuery.
 
  ![Dataflow_Graph_View.png](https://github.com/Kaushik-Puttaswamy/Train-Ticket-Booking-Customer-Data-Ingestion-via-Pub-Sub-Stream-Dataflow-and-BigQuery-with-Looker/blob/main/GCP_Console_Train_Ticket_Booking_Data_Ingestion_Screenshot/Dataflow_Graph_View.png)
 
